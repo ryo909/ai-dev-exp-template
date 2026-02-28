@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dev Tool — DayXXX</title>
+    <meta name="description" content="AI個人開発実験 DayXXX — ツールの1行説明をここに">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="app-header">
+            <div class="header-badge">DayXXX</div>
+            <h1 class="header-title">ツール名をここに</h1>
+            <p class="header-desc">1行説明をここに</p>
+        </header>
+
+        <main class="app-main">
+            <section class="tool-area">
+                <!-- ツールのUI: 入力エリア -->
+                <div class="input-group">
+                    <label for="toolInput" class="input-label">入力</label>
+                    <textarea id="toolInput" class="input-textarea" rows="4" placeholder="ここに入力..."></textarea>
+                </div>
+
+                <!-- アクションボタン -->
+                <button id="actionBtn" class="btn-primary">実行</button>
+
+                <!-- 出力エリア -->
+                <div class="output-group" id="outputGroup" style="display:none">
+                    <label class="input-label">結果</label>
+                    <div id="toolOutput" class="output-area"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <span>AI個人開発実験 DayXXX — #個人開発 #100日開発</span>
+            <a href="https://github.com/USERNAME/ai-dev-day-XXX" target="_blank" rel="noopener">GitHub</a>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
