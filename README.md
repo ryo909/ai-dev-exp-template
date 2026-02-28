@@ -1,17 +1,18 @@
-# DayXXX — ツール名をここに
+# ai-dev-exp-template
 
-> 1行説明をここに
+Vite-based single-page template for `ai-dev-day-XXX` repositories.
 
-## 使い方
+## Required meta.json fields
 
-1. ページにアクセス
-2. 入力欄にテキストを入力
-3. 「実行」ボタンをクリック
+- `day` (e.g. `Day001`)
+- `title`
+- `description`
+- `genre`
+- `theme`
+- `story_summary`
 
-## Demo
+## Theme behavior
 
-🌐 [GitHub Pages](https://USERNAME.github.io/ai-dev-day-XXX/)
-
----
-
-DayXXX / #100日開発
+- `src/themes.js` defines 8 visual themes.
+- Runtime applies `meta.json.theme` using CSS variables.
+- Day repos should set `theme` with a day-seeded deterministic selector.
